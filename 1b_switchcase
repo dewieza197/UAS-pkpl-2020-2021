@@ -1,18 +1,12 @@
 <?php
-class SegiEnam{
+class persegi{
     
-    public $phi;
-
-    public function __construct($phi=1.73205){
-        $this->phi = $phi;
+   public function luaspersegi($sisi){
+        Echo "Luas persegi adalah : ". $this->$sisi*$sisi;
     }
 
-    public function luasSegiEnam($sisi){
-        Echo "Luas Segi Enam adalah : ". 2/3*$this->phi*$sisi*$sisi;
-    }
-
-    public function kelilingSegiEnam($sisi){
-        Echo "Keliling Segi Enam adalah : ". 6*$sisi;
+    public function kelilingpersegi($sisi){
+        Echo "Keliling persegi adalah : ". 4*$sisi;
     }
 
     public function noChoice()
@@ -24,10 +18,10 @@ class SegiEnam{
     {
         switch ($pilihan) {
             case 'luas':
-                $this->luasSegiEnam($sisi);
+                $this->luaspersegi($sisi);
                 break;
             case 'keliling':
-                $this->kelilingSegiEnam($sisi);
+                $this->kelilingpersegi($sisi);
                 break;
             default:
             $this->noChoice($sisi);
@@ -35,8 +29,8 @@ class SegiEnam{
     }
 }
 
-$sisi=25;
-$pilihan = new SegiEnam;
+$sisi=20;
+$pilihan = new persegi;
 $pilihan->hitung('keliling',$sisi);
 
 ?>
