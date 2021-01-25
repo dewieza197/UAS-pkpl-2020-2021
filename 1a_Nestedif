@@ -3,13 +3,13 @@ class LoginAdmin
 {
     function username($username)
     {
-        if ($username == 'zakibhaskara') {
+        if ($username == 'dewiratna') {
             return TRUE;
         }
     }
     function password($password)
     {
-        if ($password == '12345678') {
+        if ($password == '8765431') {
             return TRUE;
         }
     }
@@ -30,5 +30,5 @@ class LoginAdmin
     }
 
 $authentikasi = new LoginAdmin;
-$cek = $authentikasi->main('zakibhaskara', '12345678');
+$cek = $authentikasi->main('dewiratna', '8765431');
 echo $cek;
