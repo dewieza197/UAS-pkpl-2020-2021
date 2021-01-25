@@ -5,21 +5,19 @@ interface SegiEnam{
 }
 
     
-class luas implements SegiEnam{
+class luas implements persegi{
     public function hitung($sisi){
-        $phi=1.73205;
-        $dua=2/3;
-        $hasil = $dua * $phi*$sisi*$sisi;
-        Echo "Luas Segi Enam adalah : ". $hasil;
+        $hasil =*$sisi*$sisi;
+        Echo "Luas persegi adalah : ". $hasil;
     }
 }
    
 
 
-class keliling implements SegiEnam{
+class keliling implements persegi{
     public function hitung($sisi){  
-        $hasil =6*$sisi;
-        Echo "Keliling Segi Enam adalah : ". $hasil;
+        $hasil =4*$sisi;
+        Echo "Keliling persegi adalah : ". $hasil;
     }
     
 }
@@ -40,7 +38,7 @@ class keliling implements SegiEnam{
     }
 }
 
-$sisi=25;
+$sisi=20;
 hitung::pilihan('luas')->hitung($sisi);
 echo '<br>';
 hitung::pilihan('keliling')->hitung($sisi);
